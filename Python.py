@@ -13,3 +13,6 @@ def jeu_devinette():
         try:
 
             choix = int(input("Entrez votre proposition : "))
+
+
+            
