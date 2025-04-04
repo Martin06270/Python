@@ -5,7 +5,7 @@ def jeu_devinette():
     essais = 0
 
     print("Bienvenue dans le jeu de devinette !")
-    print("J'ai choisi un nombre entre 1 et 100. À vous de le deviner !")
+    print("J'ai choisi un nombre entre 1 et 100. À vous de le deviner !") # Demande a l'utilisateur de deviner le nombre du joueur 
 
     while True:
         try:
