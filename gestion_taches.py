@@ -1,5 +1,6 @@
 # Gestionnaire de tâches simple
 
+# Fonction pour afficher la liste des tâches
 def afficher_taches(taches):
     if not taches:
         print("Aucune tâche enregistrée.")
@@ -8,11 +9,13 @@ def afficher_taches(taches):
         for i, tache in enumerate(taches, 1):
             print(f"{i}. {tache}")
 
+# Fonction pour ajouter une nouvelle tâche à la liste
 def ajouter_tache(taches):
     tache = input("Entrez la nouvelle tâche : ")
     taches.append(tache)
     print("Tâche ajoutée.")
 
+# Fonction pour supprimer une tâche de la liste selon son numéro
 def supprimer_tache(taches):
     afficher_taches(taches)
     try:
@@ -25,8 +28,9 @@ def supprimer_tache(taches):
     except ValueError:
         print("Veuillez entrer un numéro valide.")
 
+# Fonction principale qui affiche le menu et gère les choix de l'utilisateur
 def menu():
-    taches = []
+    taches = []  # Liste qui contiendra les tâches
     while True:
         print("\n--- Gestionnaire de tâches ---")
         print("1. Afficher les tâches")
@@ -46,5 +50,6 @@ def menu():
         else:
             print("Choix invalide.")
 
+# Point d'entrée du programme
 if __name__ == "__main__":
     menu()
