@@ -53,3 +53,4 @@ def menu():
 # Point d'entrée du programme
 if __name__ == "__main__":
     menu()
+# Ce script permet de gérer une liste de tâches avec des options pour afficher, ajouter et supprimer des tâches.
